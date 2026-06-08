@@ -4,24 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>LaptopHub | Catálogo</title>
+    <title>LaptopHub | Buscar</title>
 
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="buscar.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
 
         <div class="logo">
-            <i class="fa-solid fa-laptop"></i>
             <h2>LaptopHub</h2>
         </div>
 
@@ -38,40 +34,50 @@
 
     </header>
 
-    <!-- ENCABEZADO -->
-    <section class="catalog-header">
+    <section class="buscar-header">
 
-        <h1>Catálogo de Laptops</h1>
+        <h1>Búsqueda Avanzada</h1>
 
         <p>
-            Explora nuestra colección de laptops y consulta sus especificaciones.
+            Filtra laptops por sus características.
         </p>
 
     </section>
 
-    <!-- PRODUCTOS -->
-    <section class="catalog-products">
+    <section class="filtros-container">
 
-        <div class="products-container" id="contenedor-productos">
+        <select id="filtroMarca">
+            <option value="">Todas las marcas</option>
+        </select>
+
+        <select id="filtroRam">
+            <option value="">Toda la RAM</option>
+        </select>
+
+        <select id="filtroAlmacenamiento">
+            <option value="">Todo el almacenamiento</option>
+        </select>
+
+        <input type="number"
+               id="filtroPrecio"
+               placeholder="Precio máximo">
+
+        <button id="btnBuscar">
+            Buscar
+        </button>
+
+    </section>
+
+    <section class="resultados">
+
+        <div class="products-container"
+             id="contenedor-resultados">
 
         </div>
 
     </section>
 
-    <script src="catalogo.js"></script>
-
-    <footer>
-
-        <h3>LaptopHub</h3>
-
-        <p>
-            Proyecto académico desarrollado para la materia
-            Fundamentos de Tecnologías Web.
-        </p>
-
-    </footer>
-
-
+    <script src="buscar.js"></script>
 
 </body>
 

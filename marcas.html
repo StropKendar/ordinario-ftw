@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaptopHub | Marcas</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="marcas.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-laptop"></i>
+            <h2>LaptopHub</h2>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="proyecto-1.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="marcas.html">Marcas</a></li>
+                <li><a href="buscar.html">Buscar</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="marcas-header">
+
+        <h1>Marcas Disponibles</h1>
+
+        <p>
+            Selecciona una marca para visualizar sus laptops.
+        </p>
+
+    </section>
+
+    <section class="marcas-container">
+
+        <div class="marca-card" onclick="filtrarMarca('ASUS')">
+            <h2>ASUS</h2>
+        </div>
+
+        <div class="marca-card" onclick="filtrarMarca('HP')">
+            <h2>HP</h2>
+        </div>
+
+        <div class="marca-card" onclick="filtrarMarca('Dell')">
+            <h2>Dell</h2>
+        </div>
+
+        <div class="marca-card" onclick="filtrarMarca('Lenovo')">
+            <h2>Lenovo</h2>
+        </div>
+
+        <div class="marca-card" onclick="filtrarMarca('Acer')">
+            <h2>Acer</h2>
+        </div>
+
+        <div class="marca-card" onclick="filtrarMarca('Apple')">
+            <h2>Apple</h2>
+        </div>
+        <div class="marca-card" onclick="filtrarMarca('MSI')">
+            <h2>MSI</h2>
+        </div>
+
+        <div class="marca-card" onclick="filtrarMarca('Samsung')">
+            <h2>Samsung</h2>
+        </div>
+
+        <div class="marca-card" onclick="filtrarMarca('Huawei')">
+            <h2>Huawei</h2>
+        </div>
+
+        <div class="marca-card" onclick="filtrarMarca('LG')">
+            <h2>LG</h2>
+        </div>
+
+    </section>
+
+    <section class="catalog-products">
+
+        <div class="products-container" id="contenedor-marcas">
+
+        </div>
+
+    </section>
+
+    <script src="marcas.js"></script>
+
+</body>
+
+</html>

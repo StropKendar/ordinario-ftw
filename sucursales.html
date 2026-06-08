@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>LaptopHub | Catálogo</title>
+    <title>LaptopHub | Sucursales</title>
 
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="sucursales.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
     <header class="navbar">
 
         <div class="logo">
-            <i class="fa-solid fa-laptop"></i>
             <h2>LaptopHub</h2>
         </div>
 
@@ -38,40 +35,37 @@
 
     </header>
 
-    <!-- ENCABEZADO -->
-    <section class="catalog-header">
+    <section class="sucursales-header">
 
-        <h1>Catálogo de Laptops</h1>
+        <h1>Nuestras Sucursales</h1>
 
         <p>
-            Explora nuestra colección de laptops y consulta sus especificaciones.
+            Consulta las sucursales disponibles y encuentra la más cercana.
         </p>
 
     </section>
 
-    <!-- PRODUCTOS -->
-    <section class="catalog-products">
+    <section class="filtros-sucursales">
 
-        <div class="products-container" id="contenedor-productos">
+        <select id="filtroEstado">
+            <option value="">Todos los estados</option>
+        </select>
+
+        <button id="btnFiltrar">
+            Filtrar
+        </button>
+
+    </section>
+
+    <section class="sucursales-container">
+
+        <div id="contenedor-sucursales">
 
         </div>
 
     </section>
 
-    <script src="catalogo.js"></script>
-
-    <footer>
-
-        <h3>LaptopHub</h3>
-
-        <p>
-            Proyecto académico desarrollado para la materia
-            Fundamentos de Tecnologías Web.
-        </p>
-
-    </footer>
-
-
+    <script src="sucursales.js"></script>
 
 </body>
 
