@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sucursales>
+
+    <sucursal>
+        <id>1</id>
+        <nombre>LaptopHub Xalapa</nombre>
+        <ciudad>Xalapa</ciudad>
+        <estado>Veracruz</estado>
+        <direccion>Av. Lázaro Cárdenas #120, Col. Rafael Lucio</direccion>
+        <horario>09:00 AM - 08:00 PM</horario>
+        <telefono>2281234567</telefono>
+    </sucursal>
+
+    <sucursal>
+        <id>2</id>
+        <nombre>LaptopHub Veracruz</nombre>
+        <ciudad>Veracruz</ciudad>
+        <estado>Veracruz</estado>
+        <direccion>Blvd. Manuel Ávila Camacho #350, Zona Centro</direccion>
+        <horario>10:00 AM - 09:00 PM</horario>
+        <telefono>2299876543</telefono>
+    </sucursal>
+
+    <sucursal>
+        <id>3</id>
+        <nombre>LaptopHub Puebla</nombre>
+        <ciudad>Puebla</ciudad>
+        <estado>Puebla</estado>
+        <direccion>Av. Juárez #520, Col. La Paz</direccion>
+        <horario>09:00 AM - 07:00 PM</horario>
+        <telefono>2225557890</telefono>
+    </sucursal>
+
+    <sucursal>
+        <id>4</id>
+        <nombre>LaptopHub Guadalajara</nombre>
+        <ciudad>Guadalajara</ciudad>
+        <estado>Jalisco</estado>
+        <direccion>Av. Vallarta #1800, Col. Americana</direccion>
+        <horario>10:00 AM - 08:00 PM</horario>
+        <telefono>3334567890</telefono>
+    </sucursal>
+
+    <sucursal>
+        <id>5</id>
+        <nombre>LaptopHub Ciudad de México</nombre>
+        <ciudad>Ciudad de México</ciudad>
+        <estado>CDMX</estado>
+        <direccion>Insurgentes Sur #1000, Col. Del Valle</direccion>
+        <horario>09:00 AM - 08:00 PM</horario>
+        <telefono>5512345678</telefono>
+    </sucursal>
+
+</sucursales>
