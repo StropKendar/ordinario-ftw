@@ -1,0 +1,19 @@
+<!ELEMENT sucursales (sucursal+)>
+
+<!ELEMENT sucursal (
+    id,
+    nombre,
+    ciudad,
+    estado,
+    direccion,
+    horario,
+    telefono
+)>
+
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT horario (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>

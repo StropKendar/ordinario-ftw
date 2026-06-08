@@ -1,0 +1,27 @@
+<!ELEMENT catalogo (laptop+)>
+
+<!ELEMENT laptop (
+    id,
+    marca,
+    modelo,
+    nombre,
+    procesador,
+    ram,
+    almacenamiento,
+    pantalla,
+    precio,
+    stock,
+    imagen
+)>
+
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT procesador (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ELEMENT almacenamiento (#PCDATA)>
+<!ELEMENT pantalla (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
