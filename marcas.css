@@ -1,0 +1,52 @@
+.marcas-header{
+    text-align: center;
+    padding: 60px 8% 30px;
+}
+
+.marcas-header h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.marcas-header p{
+    color: var(--text-light);
+}
+
+.marcas-container{
+    padding: 30px 8%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 25px;
+}
+
+.marca-card{
+    background: var(--white);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.marca-card:hover{
+    transform: translateY(-5px);
+}
+
+.marca-card h2{
+    color: var(--primary);
+}
+
+.catalog-products{
+    padding: 60px 8%;
+}
