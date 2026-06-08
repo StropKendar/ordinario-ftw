@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", cargarCatalogo);
 
+let laptopsData = [];
+
 function cargarCatalogo() {
 
     fetch("productos.xml")
@@ -15,6 +17,10 @@ function cargarCatalogo() {
 
             contenedor.innerHTML = "";
 
+            laptopsData = [];
+
+            let html = "";
+
             for (let laptop of laptops) {
 
                 const id = laptop.getElementsByTagName("id")[0].textContent;
@@ -24,37 +30,46 @@ function cargarCatalogo() {
                 const almacenamiento = laptop.getElementsByTagName("almacenamiento")[0].textContent;
                 const precio = laptop.getElementsByTagName("precio")[0].textContent;
 
-                contenedor.innerHTML += `
-        <div class="product-card">
+                const item = {
+                    id,
+                    nombre,
+                    procesador,
+                    ram,
+                    almacenamiento,
+                    precio
+                };
 
-            <img src="imagenes/imagen-default.avif" alt="${nombre}">
+                laptopsData.push(item);
 
-            <h3>${nombre}</h3>
+                html += `
+                    <div class="product-card">
 
-            <p>${procesador}</p>
+                        <img src="imagenes/imagen-default.avif" alt="${nombre}">
 
-            <p>${ram} | ${almacenamiento}</p>
+                        <h3>${nombre}</h3>
 
-            <p class="price">$${precio}</p>
+                        <p>${procesador}</p>
 
-            <button onclick="verDetalles(${id})">
-                Ver detalles
-            </button>
+                        <p>${ram} | ${almacenamiento}</p>
 
-        </div>
-    `;
+                        <p class="price">$${precio}</p>
+
+                        <button onclick="verDetalles(${id})">
+                            Ver detalles
+                        </button>
+
+                    </div>
+                `;
             }
+
+            contenedor.innerHTML = html;
 
         })
         .catch(error => {
             console.error("Error al cargar el XML:", error);
         });
-
 }
 
-
 function verDetalles(id) {
-
     window.location.href = `detalle.html?id=${id}`;
-
 }
